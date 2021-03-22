@@ -1,3 +1,5 @@
-const Home = () => <h1>Hello World</h1>
+import styles from "styles/home.module.scss";
 
-export default Home
+const Home = () => <h1 className={styles.title}>Hello World</h1>;
+
+export default Home;
