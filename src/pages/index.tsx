@@ -1,3 +1,4 @@
+import { Header } from "components/Header";
 import Head from "next/head";
 
 const Home = () => (
@@ -6,7 +7,7 @@ const Home = () => (
       <title>Início - ig.news</title>
     </Head>
 
-    <h1>Hello World</h1>
+    <Header />
   </>
 );
 
