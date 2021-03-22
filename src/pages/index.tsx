@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Header } from "components/Header";
 
 import styles from "./home.module.scss";
+import { SubscribeButton } from "components/SubscribeButton";
 
 const Home = () => (
   <>
@@ -22,6 +23,7 @@ const Home = () => (
           Get access to all publications <br />
           <span>for $9.90/month</span>
         </p>
+        <SubscribeButton />
       </section>
 
       <img
