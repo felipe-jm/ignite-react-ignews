@@ -1,4 +1,4 @@
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next";
 import Head from "next/head";
 
 import { Header } from "components/Header";
@@ -43,18 +43,19 @@ const Home = ({ product }: HomProps) => (
   </>
 );
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const price = await stripe.prices.retrieve("price_1IXq7RAj29YgoVdLuTK8MJ8h");
 
   const product = {
     priceId: price.id,
-    amount: new Intl.NumberFormat("pt-BR", {
+    amount: new Intl.NumberFormat("en-US", {
       style: "currency",
       currency: "USD",
     }).format(price.unit_amount / 100),
   };
 
   return {
+    revalidate: 60 * 60 * 24, // 24 hours
     props: {
       product,
     },
