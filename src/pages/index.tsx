@@ -1,7 +1,6 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
 
-import { Header } from "components/Header";
 import { SubscribeButton } from "components/SubscribeButton";
 
 import styles from "./home.module.scss";
@@ -19,8 +18,6 @@ const Home = ({ product }: HomProps) => (
     <Head>
       <title>Home - ig.news</title>
     </Head>
-
-    <Header />
 
     <main className={styles.contentContainer}>
       <section className={styles.hero}>
