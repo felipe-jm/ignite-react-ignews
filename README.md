@@ -10,12 +10,23 @@
 
 ![App image](./app.png)
 
+## :rocket: Technologies
+
+- [React.js](https://reactjs.org/)
+- [Next.js](https://nextjs.org)
+- [Primisc](https://prismic.io)
+- [FaunaDB](https://fauna.com)
+- [Stripe](https://stripe.com)
+- [Sass](https://sass-lang.com)
+
 ## :information_source: How To Use
 
 ```bash
 git clone https://github.com/felipe-jm/ignite-react-ignews.git
 
 cd ignite-react-ignews
+
+# Create your .env.local file in the root and populate it with the necessary enviromental variables
 
 yarn
 
