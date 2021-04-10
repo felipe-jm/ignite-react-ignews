@@ -5,7 +5,7 @@
 </h1>
 
 <h4 align="center">
-  An app for managing your finances
+  News about the React world.
 </h4>
 
 ![App image](./app.png)
