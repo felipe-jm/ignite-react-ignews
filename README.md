@@ -14,7 +14,7 @@
 
 - [React.js](https://reactjs.org/)
 - [Next.js](https://nextjs.org)
-- [Primisc](https://prismic.io)
+- [Prismic](https://prismic.io)
 - [FaunaDB](https://fauna.com)
 - [Stripe](https://stripe.com)
 - [Sass](https://sass-lang.com)
