@@ -15,7 +15,7 @@ const posts = [
   },
 ];
 
-describe("<Post />", () => {
+describe("<Posts />", () => {
   it("should render correctly", () => {
     render(<Posts posts={posts} />);
 
