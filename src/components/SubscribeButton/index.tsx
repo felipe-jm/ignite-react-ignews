@@ -6,13 +6,9 @@ import { api } from "services/api";
 import { getStripeJs } from "services/stripe-js";
 
 import styles from "./styles.module.scss";
-import { UserSession, UseSession } from "pages/api/auth/[...nextauth]";
+import { UseSession } from "pages/api/auth/[...nextauth]";
 
-type SubscribeButtonProps = {
-  priceId: string;
-};
-
-export const SubscribeButton = ({ priceId }: SubscribeButtonProps) => {
+export const SubscribeButton = () => {
   const [session]: UseSession = useSession();
   const router = useRouter();
 
