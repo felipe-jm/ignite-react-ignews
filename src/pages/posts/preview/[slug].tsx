@@ -27,6 +27,7 @@ type PostPreviewProps = {
 
 const PostPreview = ({ post }: PostPreviewProps) => {
   const [session]: UseSession = useSession();
+
   const router = useRouter();
 
   useEffect(() => {
